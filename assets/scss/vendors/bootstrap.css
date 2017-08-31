@@ -3779,7 +3779,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .card-group {
     display: -ms-flexbox;
     display: flex;

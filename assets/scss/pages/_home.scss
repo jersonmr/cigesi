@@ -23,6 +23,12 @@
     margin-bottom: 1rem;
     text-align: center;
   }
+  &__description, &__video {
+    align-self: center;
+    @include media(sm) {
+      text-align: left;
+    }
+  }
   &__title {
     color: $primary;
     font-family: $open-condensed;
@@ -50,7 +56,18 @@
 // Techniques section
 .techniques {
   &__list {
-
+    display: flex;
+    flex-direction: column;
+    @include media(sm) {
+      flex-direction: row;
+      align-items: center; 
+      justify-content: space-between;        
+    }
+    @media screen and (max-width: 767px) {
+      img {
+        display: none;
+      }
+    }
   }
   &__item {
     color: $text;
@@ -58,15 +75,6 @@
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
-    &:after {
-      content: url("../images/rombo.svg");
-      margin-left: 0.4rem;
-    }
-    &:last-child {
-      &:after {
-        content: '';
-      }
-    }    
   }
   &__services {
     .card {
@@ -82,11 +90,13 @@
       &:last-child {        
         background-color: #d54991;
         color: #fff;
-        font-family: $open-condensed;
-        font-size: 2rem;        
+        font-family: $open-condensed;        
         line-height: 1.5;
-        text-align: left;
         text-transform: uppercase;
+        @include media(lg) {
+          font-size: 2rem;
+          text-align: left;
+        }
         .card-body {
           display: flex;
           flex-direction: column;

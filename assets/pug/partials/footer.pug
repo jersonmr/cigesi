@@ -1,50 +1,52 @@
-footer.footer
+footer.footer.py-3
   .container
     .row
       .col-md-6.col-lg-3
         a(href="#")
           img(src="./images/logo-footer.svg", alt="Logo footer", class="img-fluid")
       .col-md-6.col-lg-3
-        h4.footer__title
-          | CENTRO INTERNACIONAL PARA LA FORMACIÓN DE GERENTES ESPIRITUALMENTE INTELIGENTES, C.A.
-        span.footer__rif
-          | RIF N° J-40890531-0
-        p.footer__address
-          i.fa.fa-map-marker
-          | Urb. Villa Cariño, Calle El Romance
-          br
-          | Manzana BB, Casa N° 02
-          br
-          | Cumaná, Estado Sucre          
+        .footer__info.mb-3
+          h4.footer__title
+            | CENTRO INTERNACIONAL PARA LA FORMACIÓN DE GERENTES ESPIRITUALMENTE INTELIGENTES, C.A.
+          span.footer__rif
+            | RIF N° J-40890531-0
+          p.mt-3.footer__address
+            i.fa.fa-map-marker.mr-1
+            | Urb. Villa Cariño, Calle El Romance
+            br
+            | Manzana BB, Casa N° 02
+            br
+            | Cumaná, Estado Sucre          
       .col-md-6.col-lg-3
-        .footer__social
+        .footer__social.mb-4
           a(href="#")
             img(src="./images/instagram-footer.svg", alt="Instagram")
           a(href="#")
             img(src="./images/twitter-footer.svg", alt="Twitter")
           a(href="#")
             img(src="./images/facebook-footer.svg", alt="Facebook")
-        .footer__phones
+        .footer__phones.mb-4
           p
-            i.fa.fa-phone
+            i.fa.fa-phone.mr-1
             | +58 414 085.41.22
           p
-            i.fa.fa-phone
+            i.fa.fa-phone.mr-1
             | +58 293 642.47.40
-        .footer__email
+        .footer__email.mt-4
           a(href="mailto:soygesi@gmail.com")
-            i.fa.fa-envelope
+            i.fa.fa-envelope-o.mr-1
             | soygesi@gmail.com
       .col-md-6.col-lg-3
-        ul.nav.flex-column.footer__menu
-          li.nav-item
-            a(href="#").nav-link Inicio
-          li.nav-item
-            a(href="#").nav-link ¿Quiénes somos?
-          li.nav-item
-            a(href="#").nav-link Servicios
-          li.nav-item
-            a(href="#").nav-link Nuestro equipo
-          li.nav-item
-            a(href="#").nav-link Contáctenos
+        .footer__menu.mt-md-0
+          ul.nav.flex-column
+            li.nav-item
+              a(href="#").nav-link Inicio
+            li.nav-item
+              a(href="#").nav-link ¿Quiénes somos?
+            li.nav-item
+              a(href="#").nav-link Servicios
+            li.nav-item
+              a(href="#").nav-link Nuestro equipo
+            li.nav-item
+              a(href="#").nav-link Contáctenos
 script(src="./js/app.min.js")

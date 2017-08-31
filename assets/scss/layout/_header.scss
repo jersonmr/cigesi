@@ -4,9 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media(sm) {
+      justify-content: flex-end;
+    }
   }
   // Social icons
   &__social {
+    margin-right: 1rem;
     > * {
       margin: 0 0.5rem;
     }
@@ -17,6 +21,9 @@
     .navbar-brand {
       img {
         width: 150px;
+        @include media(md) {
+          width: 240px;
+        }
       }
     }
     .navbar-nav {

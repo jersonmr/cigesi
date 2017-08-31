@@ -23,12 +23,12 @@ block content
   section.gerency
     .container
       .row
-        .col-lg-6.gerency__description
+        .col-md-6.gerency__description
           h2.gerency__title
             | GERENCIA MULTIDIMENSIONAL CÓSMICA Y HOLÍSTICA
           a(href="#").gerency__link
             | Conoce más en nuestro vídeo            
-        .col-lg-6.gerency__video
+        .col-md-6.gerency__video
           div(class="embed-responsive embed-responsive-16by9")
             iframe(src="https://www.youtube.com/embed/P48z6yO-9fo?rel=0", allowfullscreen, class="embed-responsive-item")
 
@@ -41,13 +41,18 @@ block content
         span.cigesi-title.cigesi-title--subtitle
           | CON LAS TÉCNICAS TRANSPERSONALES
       
-      ul.techniques__list.py-3
-        li.techniques__item RELAJACIÓN
-        li.techniques__item MÚSICA
-        li.techniques__item RESPIRACIÓN
-        li.techniques__item CONTEMPLACIÓN
-        li.techniques__item MEDITACIÓN
-        li.techniques__item SILENCIO
+      .techniques__list.py-3
+        p.techniques__item RELAJACIÓN
+        img(src="./images/rombo.svg", alt="rombo")
+        p.techniques__item MÚSICA
+        img(src="./images/rombo.svg", alt="rombo")
+        p.techniques__item RESPIRACIÓN
+        img(src="./images/rombo.svg", alt="rombo")
+        p.techniques__item CONTEMPLACIÓN
+        img(src="./images/rombo.svg", alt="rombo")
+        p.techniques__item MEDITACIÓN
+        img(src="./images/rombo.svg", alt="rombo")
+        p.techniques__item SILENCIO        
 
       .w-100.text-center.py-3
         a(href="#").btn.cigesi-btn Aprende más

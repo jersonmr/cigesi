@@ -1,0 +1,69 @@
+.footer {
+  border-top: 4px solid $primary;
+  font-family: $roboto-condensed;
+  position: relative;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: -4px;
+    border-top: 4px solid $secondary;
+  }
+  &__bar {
+    margin-top: -12px;
+  }
+  &__title {
+    color: $primary;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &__rif {
+    color: $footer-text;
+    font-size: 0.8rem;
+  }
+  &__address {
+    color: $footer-text;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  &__social {
+    > * {
+      margin: 0 0.5rem;
+    }
+  }
+  &__phones, &__email {
+    color: $footer-text;
+    font-size: 1.1rem;
+  }
+  &__phones {
+    p:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__email {
+    a {
+      color: $footer-text;
+    }
+  }
+  &__menu {
+    background-color: $bg;
+    margin-top: 1rem;
+    @include media(md) {
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .nav-link {
+      color: $primary;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}
