@@ -1,0 +1,25 @@
+.cigesi-title {
+  color: $title;
+  font-family: $open-condensed;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  &--subtitle {
+    font-size: 3rem;
+  }
+}
+
+// primary button
+.cigesi-btn {
+  background-color: transparent !important;
+  border: 1px solid $border;
+  color: $secondary !important;
+  cursor: pointer;
+  font-family: $roboto-condensed;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $primary !important;
+    color: #fff !important;
+  }
+}

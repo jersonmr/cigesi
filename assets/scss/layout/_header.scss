@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 2px solid $border;
+  &__ribbon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // Social icons
+  &__social {
+    > * {
+      margin: 0 0.5rem;
+    }
+  }
+  // Navbar
+  &__navbar {
+    padding: 0.5rem 0;
+    .navbar-brand {
+      img {
+        width: 150px;
+      }
+    }
+    .navbar-nav {
+      text-align: center;
+      .active > .nav-link {
+        color: $secondary;
+      }
+      .nav-link {
+        color: $primary;
+        font-family: $roboto-condensed;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

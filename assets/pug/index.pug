@@ -1,0 +1,68 @@
+extends ./partials/layout.pug
+
+block content
+
+  //- Slider section
+  section.slider    
+    img(src="./images/main-slider.jpg", alt="Slider", class="img-fluid slider__img")
+
+  //- Formation section
+  section.formation.py-5
+    .container
+      h2.cigesi-title
+        | FÓRMATE COMO
+        br
+        span.cigesi-title.cigesi-title--subtitle
+          | GERENTE ESPIRITUALMENTE INTELIGENTE
+      p.formation__description.py-4
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio possimus hic similique mollitia ut, aspernatur sequi molestias iste non? Ipsa quas repudiandae molestias sint nemo minus dignissimos, tenetur amet quo.
+      .w-100.text-center.py-3
+        a(href="#").btn.cigesi-btn Inscríbete ahora
+
+  //- Gerency|Video section
+  section.gerency
+    .container
+      .row
+        .col-lg-6.gerency__description
+          h2.gerency__title
+            | GERENCIA MULTIDIMENSIONAL CÓSMICA Y HOLÍSTICA
+          a(href="#").gerency__link
+            | Conoce más en nuestro vídeo            
+        .col-lg-6.gerency__video
+          div(class="embed-responsive embed-responsive-16by9")
+            iframe(src="https://www.youtube.com/embed/P48z6yO-9fo?rel=0", allowfullscreen, class="embed-responsive-item")
+
+  //- Techniques section
+  section.techniques.py-5
+    .container
+      h2.cigesi-title
+        | ENRIQUECE TU GERENCIA
+        br
+        span.cigesi-title.cigesi-title--subtitle
+          | CON LAS TÉCNICAS TRANSPERSONALES
+      
+      ul.techniques__list.py-3
+        li.techniques__item RELAJACIÓN
+        li.techniques__item MÚSICA
+        li.techniques__item RESPIRACIÓN
+        li.techniques__item CONTEMPLACIÓN
+        li.techniques__item MEDITACIÓN
+        li.techniques__item SILENCIO
+
+      .w-100.text-center.py-3
+        a(href="#").btn.cigesi-btn Aprende más
+
+      .techniques__services
+        .card-group
+          .card
+            img.card-img(src='./images/service1.jpg', alt='Servicio 1')
+            .card-img-overlay
+              h4.card-title FORMACIÓN GESI              
+          .card
+            img.card-img(src='./images/service2.jpg', alt='Servicio 2')
+            .card-img-overlay
+              h4.card-title ASESORÍA Y GERENCIA ORGANIZACIONAL
+          .card
+            .card-body
+              h4.card-title CAPACÍTATE HOY CON LAS HERRAMIENTAS GERENCIALES DEL MAÑANA              
+          

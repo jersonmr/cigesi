@@ -1,0 +1,32 @@
+header.header.py-3
+  .container
+    .header__ribbon
+      .header__social
+        a(href="#")
+          img(src="./images/instagram-header.svg", alt="instagram")
+        a(href="#")
+          img(src="./images/twitter-header.svg", alt="twitter")
+        a(href="#")
+          img(src="./images/facebook-header.svg", alt="facebook")
+      a.btn.cigesi-btn Iniciar sesión
+
+    //- Navbar
+    nav.navbar.navbar-expand-md.navbar-light.header__navbar
+      a.navbar-brand(href='#')
+        img(src="./images/logo-header.svg", alt="Logo CIGESI", class="img-fluid")
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavbar', aria-controls='mainNavbar', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #mainNavbar.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Inicio
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') ¿Quiénes Somos?
+          li.nav-item
+            a.nav-link(href='#') Nuestro Equipo          
+          li.nav-item
+            a.nav-link(href='#') Servicios          
+          li.nav-item
+            a.nav-link(href='#') Contáctenos

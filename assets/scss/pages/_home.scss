@@ -1,0 +1,98 @@
+// Slider section
+.slider {
+  .slider__img {
+    min-width: 100%;
+  }
+}
+
+// Formation section
+.formation {
+  &__description {
+    color: $text;
+    font-family: $open-condensed;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+// Gerency|Video section
+.gerency {
+  background-color: $bg;
+  &__description {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  &__title {
+    color: $primary;
+    font-family: $open-condensed;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  &__link {
+    color: $text;
+    font-family: $open-condensed;
+    font-size: 1.5rem;    
+    &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      content: '\f0da';
+      font-family: FontAwesome;
+      color: green;
+      margin-left: 0.4rem;
+    }
+  }
+}
+
+// Techniques section
+.techniques {
+  &__list {
+
+  }
+  &__item {
+    color: $text;
+    font-family: $open-condensed;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/rombo.svg");
+      margin-left: 0.4rem;
+    }
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }    
+  }
+  &__services {
+    .card {
+      &:nth-child(1) {
+        color: #a0731b;
+      }
+      &:nth-child(2) {        
+        color: #5b6577;
+      }
+      font-family: $open;
+      font-size: 1.5rem;
+      text-align: center;
+      &:last-child {        
+        background-color: #d54991;
+        color: #fff;
+        font-family: $open-condensed;
+        font-size: 2rem;        
+        line-height: 1.5;
+        text-align: left;
+        text-transform: uppercase;
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
