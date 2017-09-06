@@ -1,0 +1,28 @@
+extends ./partials/layout.pug
+
+block content
+
+  section.about.pt-5
+    .container
+      h2.cigesi-title.cigesi-title--subtitle
+        | NUESTRO EQUIPO
+      p.about__description.text-center.w-75.mx-auto.pt-5.pb-3
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, esse voluptatibus sunt molestias odio fuga
+
+  section.members
+    - var i = 0;
+    while i < 5          
+      article.members__item
+        .container-fluid
+          .row
+            .col-md-4.col-lg-3.members__img            
+              img(src="./images/miembro.png", alt="", class="img-fluid")
+              h4.members__name
+                | DOUGLAS FARIAS
+              span.members__position
+                | Fundador
+            .col-md-8.col-lg-9.members__description
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam voluptates assumenda dolores, error facilis dolorum laboriosam eaque cum obcaecati maxime eum suscipit quis ipsum dignissimos nostrum cumque nobis deleniti.
+                |Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quae omnis dolores eligendi dolore distinctio dolorum unde eaque culpa! Nisi id consequatur similique eligendi tenetur nam sunt pariatur enim hic!
+        -i++

@@ -13446,4 +13446,165 @@ img {
   justify-content: center;
 }
 
+.about__title {
+  color: #577565;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2.6rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.about__description {
+  color: #64796e;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.about__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img img {
+  min-width: 100%;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .about__text {
+    padding-left: 4rem;
+  }
+}
+
+.mission, .vision, .objetives {
+  background-color: #f2f4f3;
+}
+
+.vision .row .about__text {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .vision .row .about__text {
+    order: 1;
+  }
+}
+
+.members__item {
+  border-top: 1px solid #a2b423;
+  border-bottom: 1px solid #ccd2df;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.members__item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 75%;
+  top: -1px;
+  border-top: 1px solid #D54A91;
+}
+
+@media (min-width: 768px) {
+  .members__item {
+    border-left: 6rem solid #d5dbd7;
+  }
+}
+
+.members__img, .members__description {
+  padding: 2rem 0;
+}
+
+.members__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.members__img img {
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.members__name, .members__position {
+  color: #496255;
+  text-align: center;
+}
+
+.members__name {
+  border-bottom: 1px solid #f58301;
+  font-size: 1.9rem;
+}
+
+.members__position {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.members__description {
+  background-color: #f2f4f3;
+  color: #64796e;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.contact-form__description {
+  color: #64796e;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.contact-form .form-control {
+  border: 1px solid #c2cac5;
+  color: #c2cac5;
+  font-size: 1.2rem;
+}
+
+.learn {
+  background-color: #f2f4f3;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.learn .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .learn .col-md-6 {
+    padding-left: 4rem;
+  }
+}
+
+.learn__title {
+  color: #577565;
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+.learn__link {
+  color: #64796e;
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=cigesi.min.css.map */

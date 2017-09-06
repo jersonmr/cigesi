@@ -1,0 +1,55 @@
+.members {
+  &__item {
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid #ccd2df;
+    font-family: $open-condensed;
+    margin-bottom: 2rem;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 75%;
+      top: -1px;
+      border-top: 1px solid #D54A91;
+    }
+    @include media(sm) {
+      border-left: 6rem solid #d5dbd7;
+    }
+  }  
+  &__img, &__description {
+    padding: 2rem 0;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      border-radius: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__name, &__position {
+    color: #496255;
+    text-align: center;
+  }
+  &__name {
+    border-bottom: 1px solid #f58301;
+    font-size: 1.9rem;    
+  }
+  &__position {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  &__description {
+    background-color: $bg;
+    color: $text;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}

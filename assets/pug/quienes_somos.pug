@@ -1,0 +1,44 @@
+extends ./partials/layout.pug
+
+block content
+
+  section.about.pt-5
+    .container
+      h2.cigesi-title.cigesi-title--subtitle
+        | ¿QUIENES SÓMOS?
+      p.about__description.text-center.w-75.mx-auto.pt-5.pb-3
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, esse voluptatibus sunt molestias odio fuga
+
+  section.mission.mb-5
+    .container-fluid
+      .row
+        .col-md-6.py-5.about__text
+          h2.about__title MISIÓN
+          p.about__description
+            | Prestar servicios educativos de alto nivel humano y espiritual para la formación profesional de Gerentes Espiritualmente Inteligentes (GESI) para edificar al nuevo ser humano con visión trascendental para las Organizaciones Inteligentes del siglo XXI.
+        .col-md-6.about__img
+          img(src="./images/mision.jpg", alt="Mision", class="img-fluid")
+
+  section.vision.mb-5
+    .container-fluid
+      .row
+        .col-md-6.about__img
+          img(src="./images/vision.jpg", alt="Vision", class="img-fluid")
+        .col-md-6.about__text
+          h2.about__title VISIÓN
+          p.about__description
+            | Posicionarnos a nivel nacional e internacional en tiempo perfecto como un centro educativo de alto nivel vanguardista.
+
+  section.objetives.mb-5
+    .container-fluid
+      .row
+        .col-md-6.about__text
+          h2.about__title OBJETIVOS
+          ul.about__description
+            li Texto correspondiente al objetivo 1
+            li Texto correspondiente al objetivo 2
+            li Texto correspondiente al objetivo 3
+            li Texto correspondiente al objetivo 4
+            li Texto correspondiente al objetivo 5
+        .col-md-6.about__img
+          img(src="./images/objetivos.jpg", alt="Objetivos", class="img-fluid")

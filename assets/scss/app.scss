@@ -6,19 +6,22 @@
 @import "./vendors/fonts";
 
 // Helpers
-@import "./helpers/_variables";
-@import "./helpers/_mixins";
+@import "./helpers/variables";
+@import "./helpers/mixins";
 
 // Base
-@import "./base/_base";
-@import "./base/_reset";
+@import "./base/base";
+@import "./base/reset";
 
 // Components
-@import "./components/_cigesi.scss";
+@import "./components/cigesi.scss";
 
 // Layout
-@import "./layout/_header";
-@import "./layout/_footer";
+@import "./layout/header";
+@import "./layout/footer";
 
 // Pages
-@import "./pages/_home";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/team";
+@import "./pages/contact";

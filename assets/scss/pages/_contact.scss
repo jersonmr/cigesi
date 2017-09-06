@@ -1,0 +1,35 @@
+.contact-form {
+  font-family: $open-condensed;
+  &__description {
+    color: $text;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .form-control {
+    border: 1px solid #c2cac5;
+    color: #c2cac5;
+    font-size: 1.2rem;
+  }
+}
+
+.learn {
+  background-color: $bg;
+  font-family: $open-condensed;
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include media(sm) {
+      padding-left: 4rem;
+    }
+  }
+  &__title {
+    color: $primary;
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
+  &__link {
+    color: $text;
+    font-size: 1.5rem;
+  }
+}
