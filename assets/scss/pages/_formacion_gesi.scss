@@ -1,0 +1,88 @@
+.fgesi {
+  font-family: $open-condensed;
+  &__subtitle {
+    color: $secondary;
+    font-size: 2.1em;
+    text-align: center;
+    margin: 1rem auto;
+    text-transform: uppercase;
+  }
+  &__coaching {
+    border: 1px solid $title;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 100%;
+    @include media (md) {
+      width: 40%;
+    }
+    h4 {
+      color: $text;
+      font-size: 1.2rem;
+    }
+    h3 {
+      color: $primary;
+      font-family: $open;
+      font-size: 1rem;      
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+  &__description {
+    color: $text;
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+}
+
+// ejes section
+.ejes {
+  background-color: $bg;
+  &__title {
+    color: $text;
+    font-family: $open-condensed;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  hr {
+    background-color: $title;
+  }
+  &__item {
+     background-color: #fefffe;
+     margin: 1.5rem 0;
+     padding: 0.5rem;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;    
+    @include media(md) {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+    @include media(lg) {
+      display: block;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name {
+    color: $secondary;
+    font-family: $open-condensed;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  &__description {
+    color: $text;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+}
+

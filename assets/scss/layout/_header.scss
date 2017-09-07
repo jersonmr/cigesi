@@ -31,7 +31,7 @@
       .active > .nav-link {
         color: $secondary;
       }
-      .nav-link {
+      .nav-link, .dropdown-item {
         color: $primary;
         font-family: $roboto-condensed;
         font-size: 1rem;

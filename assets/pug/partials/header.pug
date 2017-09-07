@@ -26,7 +26,17 @@ header.header.py-3
             a.nav-link(href='quienes_somos.html') ¿Quiénes Somos?
           li.nav-item
             a.nav-link(href='nuestro_equipo.html') Nuestro Equipo          
-          li.nav-item
-            a.nav-link(href='servicios.html') Servicios          
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#', id="navbarDropdownLink", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Servicios 
+            .dropdown-menu(aria-labelledby="navbarDropdownLink")
+              a.dropdown-item(href="formacion_gesi.html") Formación GESI
+              a.dropdown-item(href="#") Formación OEI
+              a.dropdown-item(href="#") Formación Terapeutas
+              hr
+              a.dropdown-item(href="#") Cursos
+              a.dropdown-item(href="#") Talleres
+              a.dropdown-item(href="#") Conferencias
+              hr
+              a.dropdown-item(href="#") Libros
           li.nav-item
             a.nav-link(href='contacto.html') Contáctenos
