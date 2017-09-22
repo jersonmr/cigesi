@@ -12,14 +12,14 @@ header.header.py-3
 
     //- Navbar
     nav.navbar.navbar-expand-md.navbar-light.header__navbar
-      a.navbar-brand(href='#')
+      a.navbar-brand(href='index.html')
         img(src="./images/logo-header.svg", alt="Logo CIGESI", class="img-fluid")
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavbar', aria-controls='mainNavbar', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #mainNavbar.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item.active
-            a.nav-link(href='#')
+            a.nav-link(href='index.html')
               | Inicio
               span.sr-only (current)
           li.nav-item
@@ -30,13 +30,7 @@ header.header.py-3
             a.nav-link.dropdown-toggle(href='#', id="navbarDropdownLink", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Servicios 
             .dropdown-menu(aria-labelledby="navbarDropdownLink")
               a.dropdown-item(href="formacion_gesi.html") Formación GESI
-              a.dropdown-item(href="#") Formación OEI
-              a.dropdown-item(href="#") Formación Terapeutas
-              hr
-              a.dropdown-item(href="#") Cursos
-              a.dropdown-item(href="#") Talleres
-              a.dropdown-item(href="#") Conferencias
-              hr
-              a.dropdown-item(href="#") Libros
+              a.dropdown-item(href="formacion_oei.html") Formación OEI
+              a.dropdown-item(href="formacion_terapeutas.html") Formación Terapeutas              
           li.nav-item
-            a.nav-link(href='contacto.html') Contáctenos
+            a.nav-link(href='contactenos.html') Contáctenos

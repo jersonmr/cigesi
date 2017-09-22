@@ -58,13 +58,17 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 1rem;    
+    @include media(sm) {      
+      align-items: center;      
+      text-align: center;
+    }
     @include media(md) {
       flex-direction: row;
       justify-content: flex-start;
       margin-bottom: 0;
     }
-    @include media(lg) {
-      display: block;
+    @include media(lg) {      
+      align-items: center;
     }
   }
   &__content {
@@ -77,12 +81,19 @@
     font-family: $open-condensed;
     font-size: 1.9rem;
     margin-bottom: 1rem;
+    text-align: center;
     text-transform: uppercase;
+    @include media(md) {
+      text-align: left;
+    }
   }
   &__description {
     color: $text;
+    font-family: $open-condensed;
     font-size: 1.4rem;
     line-height: 1.3;
+    list-style-image: url("../images/rombo.svg");
+    padding-left: 1.5rem;
   }
 }
 

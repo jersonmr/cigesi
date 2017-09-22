@@ -11,7 +11,11 @@
     font-family: $open-condensed;
     font-size: 1.6rem;
     line-height: 1.5;
-  }
+    &--last {
+      list-style-image: url("../images/rombo.svg");
+      padding-left: 1.5rem;
+    }
+  }  
   &__img {
     display: flex;
     flex-direction: column;

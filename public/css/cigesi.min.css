@@ -13461,6 +13461,11 @@ img {
   line-height: 1.5;
 }
 
+.about__description--last {
+  list-style-image: url("../images/rombo.svg");
+  padding-left: 1.5rem;
+}
+
 .about__img {
   display: flex;
   flex-direction: column;
@@ -13535,6 +13540,8 @@ img {
 .members__img img {
   border-radius: 0.5rem;
   padding-bottom: 1.5rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .members__name, .members__position {
@@ -13605,6 +13612,11 @@ img {
 .learn__link {
   color: #64796e;
   font-size: 1.5rem;
+}
+
+.learn__link:hover {
+  color: #a2b423;
+  text-decoration: none;
 }
 
 .fgesi {
@@ -13681,6 +13693,13 @@ img {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .ejes__img {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (min-width: 992px) {
   .ejes__img {
     flex-direction: row;
@@ -13691,7 +13710,7 @@ img {
 
 @media (min-width: 1200px) {
   .ejes__img {
-    display: block;
+    align-items: center;
   }
 }
 
@@ -13706,13 +13725,23 @@ img {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.9rem;
   margin-bottom: 1rem;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .ejes__name {
+    text-align: left;
+  }
 }
 
 .ejes__description {
   color: #64796e;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.4rem;
   line-height: 1.3;
+  list-style-image: url("../images/rombo.svg");
+  padding-left: 1.5rem;
 }
 
 /*# sourceMappingURL=cigesi.min.css.map */
